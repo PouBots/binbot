@@ -1,2 +1,2 @@
 # binbot
-A trading bot for Binance api
+A trading bot for Binance Futures api
