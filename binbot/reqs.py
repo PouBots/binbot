@@ -11,7 +11,6 @@ class reqs:
         try: 
             response    = requests.get(url, params=params, headers=headers)
             data        = json.loads(response.text)
-            #data['url'] = url
         except Exception as e:
             raise Exception
             print("Exception occured when trying to get from " + url)
@@ -24,7 +23,6 @@ class reqs:
         try: 
             response    = requests.post(url, params=params, headers=headers)
             data        = json.loads(response.text)
-            #data['url'] = url
         except Exception as e:
             print("Exception occured when trying to post to " + url)
             print(e)
